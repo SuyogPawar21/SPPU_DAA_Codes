@@ -75,6 +75,17 @@ void input(int& knapSackCapacity, int& objectCount, vector<vector<int> >& profit
     }
 }
 
+void printMemo(int knapSackCapacity, int objectCount, vector<vector<int> >& memo) {
+    cout << "Memo" << endl;
+
+    for (int obj = 0; obj <= objectCount; obj++) {
+        for (int w = 0; w <= knapSackCapacity; w++) {
+            cout << memo[obj][w] << " ";
+        }
+        cout << endl;
+    }
+}
+
 vector<vector<int> > maxProfitDP(int knapSackCapacity, int objectCount, vector<vector<int> >& profitWeights) {
 
     vector<vector<int> > memo(objectCount + 1, vector<int>(knapSackCapacity + 1));
@@ -97,6 +108,8 @@ vector<vector<int> > maxProfitDP(int knapSackCapacity, int objectCount, vector<v
             }
         }
     }
+
+    printMemo(knapSackCapacity, objectCount, memo);
 
     return memo;
 }

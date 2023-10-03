@@ -19,16 +19,21 @@ Menu
 2. 0/1 Knapsack
 3. Exit
 Enter your choice: 2
-Enter Capacity of the bag: 50
+Enter Capacity of the bag: 6
 Enter number of objects: 3
-Enter profit of 1 object: 60
-Enter weight of 1 object: 10
-Enter profit of 2 object: 100
-Enter weight of 2 object: 20
-Enter profit of 3 object: 120
-Enter weight of 3 object: 30
-Max Profit: 220
-Objects in Solution: 3 2
+Enter profit of 1 object: 10
+Enter weight of 1 object: 1
+Enter profit of 2 object: 15
+Enter weight of 2 object: 2
+Enter profit of 3 object: 40
+Enter weight of 3 object: 3
+Memo
+0 0 0 0 0 0 0
+0 10 10 10 10 10 10
+0 10 15 25 25 25 25
+0 10 15 40 50 55 65
+Max Profit: 65
+Objects in Solution: 3 2 1
 
 Menu
 1. Fractional Knapsack

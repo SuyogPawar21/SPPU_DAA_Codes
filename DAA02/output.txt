@@ -6,12 +6,12 @@ Example without negative edge cycle.
 4 Iteration: 0 1 3 5 0 4 3
 5 Iteration: 0 1 3 5 0 4 3
 6 Iteration: 0 1 3 5 0 4 3
+7 Iteration: 0 1 3 5 0 4 3
 Example with negative edge cycle.
 0 Iteration: 9999 0 9999 9999
-1 Iteration: 4 -3 -6 -1
-2 Iteration: 1 -6 -9 -4
+1 Iteration: 4 -3 -6 -1 2 Iteration: 1 -6 -9 -4
 3 Iteration: -2 -9 -12 -7
+4 Iteration: -5 -12 -15 -10
 Negative Edge Cycle Detected.
 Above Results Invalid.
 Please try another shortest distance algorithm.
-Process finished with exit code 0

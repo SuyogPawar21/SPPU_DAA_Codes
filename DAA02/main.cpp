@@ -63,12 +63,22 @@ void BellmanFord(vector<Edge>& edgeList, vector<int>& distances, int startVertex
         printDistances(distances, vertexCount);
     }
 
+    bool containsNegativeEdgeCycle;
+
     for (int j = 0; j < edgeCount; j++) {
         if (relaxEdge(j, edgeList, distances)) {
-            cout << "Negative Edge Cycle Detected.\nAbove Results Invalid.\nPlease try another shortest distance algorithm.";
-            break;
+            containsNegativeEdgeCycle = true;
         }
     }
+
+    cout << vertexCount << " Iteration: ";
+    printDistances(distances, vertexCount);
+
+    if (containsNegativeEdgeCycle) {
+        cout << "Negative Edge Cycle Detected.\nAbove Results Invalid.\n"
+                "Please try another shortest distance algorithm.";
+    }
+
 }
 
 int main() {
