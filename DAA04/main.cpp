@@ -238,10 +238,10 @@ void input(matrix &adjMatrix, int &sourceVertex) {
     adjMatrix.resize(vertexCount, vector<int>(vertexCount));
 
     cout << "Enter adjacency matrix" << endl;
-    for (int row = 1; row <= vertexCount; row++) {
-        for (int column = 1; column <= vertexCount; column++) {
+    for (int row = 0; row < vertexCount; row++) {
+        for (int column = 0; column < vertexCount; column++) {
             printf("matrix[%i][%i]: ", row, column);
-            cin >> adjMatrix[row - 1][column - 1];
+            cin >> adjMatrix[row][column];
         }
     }
 
