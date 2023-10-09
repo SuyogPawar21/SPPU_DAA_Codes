@@ -135,20 +135,6 @@ matrix copyMatrix(matrix& adjMatrix) {
     return copiedMatrix;
 }
 
-void printMatrix(matrix& adjMatrix) {
-
-    int rowCount = adjMatrix.size();
-    int columnCount = adjMatrix[0].size();
-
-    cout << endl;
-    for (int row = 0; row < rowCount; row++) {
-        for (int column = 0; column < columnCount; column++) {
-            cout << adjMatrix[row][column] << "\t";
-        }
-        cout << endl;
-    }
-}
-
 bool containsNumber(vector<int>& numbers, int number) {
     for (int num : numbers) {
         if (num == number) {
