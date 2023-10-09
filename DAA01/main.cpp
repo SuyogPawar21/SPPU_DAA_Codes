@@ -33,6 +33,7 @@ double calculateMaxProfit(vector<vector<double> > PWRatioAndIndex, vector<vector
 
     cout << "Objects in Solution: ";
     for (int i = objectCount - 1; i >= 0; i--) {
+
         int pos = PWRatioAndIndex[i][1];
         int profit = profitWeights[pos][1];
         int weight = profitWeights[pos][0];
